@@ -1,0 +1,17 @@
+python /content/drive/MyDrive/SimCLR/main.py \
+    --name 'LinEval_z_latest' \
+    --path '/content/drive/MyDrive/SimCLR' \
+    --load \
+    --ckpt 'Pretrain_latest_outdim128/epoch_49' \
+    --start_from_step 1 \
+    --finetune  \
+    --lin_eval \
+    --batch_size 128 \
+    --out_dim 128 \
+    --save_period 5 \
+    --epochs 50 \
+    --learning_rate 0.025 \
+    --num_workers 8 \
+    --channels 3 \
+    --width 96 \
+    --height 96 

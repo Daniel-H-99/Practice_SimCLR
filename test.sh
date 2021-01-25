@@ -1,0 +1,18 @@
+python /content/drive/MyDrive/SimCLR/main.py \
+    --name 'Test_latest' \
+    --path '/content/drive/MyDrive/SimCLR' \
+    --test \
+    --load \
+    --ckpt 'LinEval_z_latest/epoch_50' \
+    --start_from_step 1 \
+    --batch_size 512 \
+    --use_z \
+    --out_dim 128 \
+    --save_period 2 \
+    --epochs 40 \
+    --early_stop_threshold 3 \
+    --learning_rate 1 \
+    --num_workers 8 \
+    --channels 3 \
+    --width 96 \
+    --height 96 
